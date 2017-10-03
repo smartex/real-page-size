@@ -6,7 +6,7 @@ var _async = require('async');
 
 var getPageSizeSample = function (callback) {
   var phantom = phantomjs.exec.apply(null, [
-    'yslow.js',
+    __dirname + '/yslow.js',
     '--info',
     'basic',
     '--format',
